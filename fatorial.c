@@ -13,6 +13,5 @@ int main() {
 	int fat = fatorial(6);
 
 	printf("%d", fat);
-	printf("OI");
 	return 0;
 }
