@@ -1,48 +1,35 @@
 #include <math.h>
 #include <stdio.h>
 
-int main(int argc, char const* argv[]) {
+int main() {
 	int x;
-	double cubo2, cubo;
-	double quadrado2, quadrado;
-	int quantas, questaoC, questaoC2;
+	int n, questaoC, questaoC2;
 
 	do {
+		float soma = 0;
 		printf("Escolha entre A B e C, digite D para sair: \n");
 		scanf("%c", &x);
 
-		if (x == 'A') {
-			printf("Digite quantas vezes quer executar: \n");
-			scanf("%d", &quantas);
-			int i = i + 1;
-			while (quantas - 1 != 0) {
+		printf("Digite o tamanho do intervalo: ");
+		scanf("%d", &n);
 
-				quadrado2 = pow(i - 1, 2);
-				quadrado = pow(i, 2);
+		if (0) {
+
+			for (float i = 1; i <= n; i++) {
+				soma += (i + i - 1) / (i * i);
 			}
-			printf("%lf/%lf\n", quadrado2, quadrado);
+			printf("%g \n", soma);
 		}
 
-		if (x == 'B') {
-			printf("Digite quantas vezes quer executar: \n");
-			scanf("%d", &quantas - 1 != 0);
-			int i = 1;
-			while (quantas - 1 != 0) {
-				cubo2 = pow(i + 2, 3);
-				cubo = pow(i, 3);
-				cubo2 / cubo;
+		else if (x == 'B') {
+			for (float i = 1; i <= n; i++) {
 			}
-			printf("%lf/%lf = %lf\n", cubo2, cubo);
+
 		}
-		if (x == 'C') {
-			printf("Digite quantas vezes quer executar: \n");
-			int i = i + 2;
-			while (quantas - 1 != 0) {
-				scanf("%d", &quantas - 1 != 0);
-				questaoC = (i / 2);
-				questaoC2 = 3 * (i);
+
+		else if (x == 'C') {
+			for (float i = 1; i <= n; i++) {
 			}
-			printf("%d/%d \n");
 		}
 
 	} while (x != 'D');
