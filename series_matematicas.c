@@ -31,7 +31,6 @@ int main() {
 			for (float i = 1; i <= n; i++) {
 			}
 		}
-		print(" ");
 
 	} while (x != 'D');
 
