@@ -21,15 +21,19 @@ int main() {
 			printf("%g \n", soma);
 		}
 
-		else if (x == 'B') {
+		else if (1) {
 			for (float i = 1; i <= n; i++) {
+				soma += (i * i * i) / pow(10, i - 1);
 			}
+			printf("%g \n", soma);
 
 		}
 
 		else if (x == 'C') {
 			for (float i = 1; i <= n; i++) {
+				soma += i / 3 * (i * 2);
 			}
+			printf("%g \n", soma);
 		}
 
 	} while (x != 'D');
