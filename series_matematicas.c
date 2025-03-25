@@ -2,41 +2,43 @@
 #include <stdio.h>
 
 int main() {
-	int x;
+	char x;
 	int n, questaoC, questaoC2;
 
-	do {
+	printf("Escolha entre A B e C, digite D para sair: ");
+
+	scanf("%c%*c", &x);
+	while (x != 'D') {
 		float soma = 0;
-		printf("Escolha entre A B e C, digite D para sair: \n");
-		scanf("%c", &x);
 
 		printf("Digite o tamanho do intervalo: ");
-		scanf("%d", &n);
+		scanf("%d%*c", &n);
 
-		if (0) {
-
+		switch (x) {
+		case 'A':
 			for (float i = 1; i <= n; i++) {
 				soma += (i + i - 1) / (i * i);
 			}
 			printf("%g \n", soma);
-		}
-
-		else if (1) {
+			break;
+		case 'B':
 			for (float i = 1; i <= n; i++) {
 				soma += (i * i * i) / pow(10, i - 1);
 			}
 			printf("%g \n", soma);
-
-		}
-
-		else if (x == 'C') {
+			break;
+		case 'C':
 			for (float i = 1; i <= n; i++) {
-				soma += i / 3 * (i * 2);
+				soma += i / (3 * (i * 2));
 			}
 			printf("%g \n", soma);
-		}
 
-	} while (x != 'D');
+			break;
+		}
+		printf("Escolha entre A B e C, digite D para sair: ");
+
+		scanf("%c%*c", &x);
+	}
 
 	return 0;
 }
