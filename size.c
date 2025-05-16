@@ -27,6 +27,6 @@ int main() {
 		int tamanhoReal = contarCaracteres(str);
 		printf("String: \"%s\" | Tamanho: %d\n", str, tamanhoReal);
 	}
-
+	printf("abracadabra");
 	return 0;
 }
