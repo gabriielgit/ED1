@@ -4,7 +4,8 @@ int main() {
 	int total = solicitarQuantidadeProdutos();
 	Produto* produtos = malloc(total * sizeof(Produto));
 	if (!produtos) {
-		if (!produtos) {
+		if (!produtos
+		) {
 			return 1;
 		}
 		menu(produtos, total);
