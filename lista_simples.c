@@ -28,6 +28,6 @@ void menu() {
 		default:
 			printf("\nOpção inválida.");
 		}
-
+		printf("teset");
 	} while (op != 'E');
 }
