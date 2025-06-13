@@ -10,17 +10,17 @@
 typedef struct dados listaDupla;
 
 struct dados {
-    int codigo;
-    listaDupla *anterior;
-    listaDupla *proximo;
+	int codigo;
+	listaDupla* anterior;
+	listaDupla* proximo;
 };
 
 void menu();
-listaDupla* inserirInicio(listaDupla *inicio);
-listaDupla* inserirFim(listaDupla *inicio);
+listaDupla* inserirInicio(listaDupla* inicio);
+listaDupla* inserirFim(listaDupla* inicio);
 listaDupla* pesquisarNo(int codigo, listaDupla* lista);
-listaDupla* excluirNo(listaDupla *lista);
-void exibirLista(listaDupla *lista);
+listaDupla* excluirNo(listaDupla* lista);
+void exibirLista(listaDupla* lista);
 int digitarCodigo();
 
 #endif /* BIBLIOTECA_H_ */
