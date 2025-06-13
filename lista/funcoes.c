@@ -1,4 +1,3 @@
-
 #include "biblioteca.h"
 #include <ctype.h>
 
@@ -30,12 +29,15 @@ void menu() {
 			printf("\nNó encontrado: %p\n", pesquisarNo(cod, lista));
 			break;
 		case 'D':
-			lista = excluirNo(lista);
+			inserirFimUltimo(lista);
 			break;
 		case 'E':
-			exibirLista(lista);
+			lista = excluirNo(lista);
 			break;
 		case 'F':
+			exibirLista(lista);
+			break;
+		case 'G':
 			break;
 		default:
 			printf("\nOpção inválida!");
@@ -75,6 +77,25 @@ listaDupla* inserirFim(listaDupla* inicio) {
 	temp->proximo = novo;
 	novo->anterior = temp;
 	return inicio;
+}
+
+void inserirFimUltimo(listaDupla** inicio, listaDupla** ultimo) {
+
+	listaDupla* novo = (listaDupla*)malloc(sizeof(listaDupla));
+	novo->codigo = ALEATORIO();
+	novo->proximo = NULL;
+
+	if (*ultimo == NULL) {
+
+		novo->anterior = NULL;
+		*inicio = novo;
+		*ultimo = novo;
+	} else {
+
+		novo->anterior = *ultimo;
+		(*ultimo)->proximo = novo;
+		*ultimo = novo;
+	}
 }
 
 listaDupla* pesquisarNo(int codigo, listaDupla* lista) {

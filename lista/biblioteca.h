@@ -18,6 +18,7 @@ struct dados {
 void menu();
 listaDupla* inserirInicio(listaDupla* inicio);
 listaDupla* inserirFim(listaDupla* inicio);
+void inserirFimUltimo(listaDupla** inicio, listaDupla** ultimo);
 listaDupla* pesquisarNo(int codigo, listaDupla* lista);
 listaDupla* excluirNo(listaDupla* lista);
 void exibirLista(listaDupla* lista);
