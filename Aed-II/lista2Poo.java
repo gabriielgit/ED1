@@ -5,6 +5,7 @@ public class lista2Poo {
 		int Codigo;
 		String Placa;
 		String Modelo;
+
 	}
 
 	class DataEntrada {
@@ -21,6 +22,11 @@ public class lista2Poo {
 		int Ano;
 		int hora;
 		int Minuto;
+	};
+
+	class ValoraPagar {
+		int valor;
+
 	};
 
 	public static void main(String[] args) {
