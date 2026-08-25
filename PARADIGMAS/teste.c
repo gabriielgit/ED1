@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 int main() {
+	char nome[10];
+	int a, b, c;
 
-	char nome[20];
-	int idade;
-	printf("Digite o nome: ");
-	scanf("%[^\n]", nome);
-	printf("Digite a idade: ");
-	scanf("%d", &idade);
-	printf("Nome: %s, %d anos", nome, idade);
+	scanf("%s", nome);
+	scanf("%d \n %d \n  %d", &a, &b, &c);
+
+	int media = (a + b + c) / 3;
+	printf("Nome: %s\n", nome);
+	printf("Media: %d\n", media);
+
 	return 0;
 }
