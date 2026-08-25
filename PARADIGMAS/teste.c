@@ -6,7 +6,7 @@ int main() {
 	int a, b, c;
 
 	scanf("%s", nome);
-	scanf("%d \n %d \n  %d", &a, &b, &c);
+	scanf("%d %d %d", &a, &b, &c);
 
 	int media = (a + b + c) / 3;
 	printf("Nome: %s\n", nome);
