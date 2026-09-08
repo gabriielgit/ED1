@@ -2,12 +2,11 @@
 #include <stdlib.h>
 
 int fibo(int n) {
-	int anterior;
-	anterior = n;
-	printf("%d\n", n + anterior);
-	fibo(n);
-
-	return;
+	if (i >= n) {
+		break;
+		return;
+	} else {
+	}
 }
 
 int main() {
