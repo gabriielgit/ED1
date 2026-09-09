@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int SomaFracao(int S, double soma, double a, double b) {
+double SomaFracao(int S, double soma, double a, double b) {
 
-	if (S == 0) {
-		return 0;
+	if (S != 0) {
+		soma += (a / b);
+		// printf("%.2lf\n", soma);
+		SomaFracao(S - 1, soma, a + 2, b + 1);
 	} else {
-		soma += (a += 2) / (b++);
-		SomaFracao(S - 1, soma, a, b);
-		return 0;
+		return soma;
 	}
 }
 
 int main() {
+	system("cls");
 	int S;
 	double soma = 0, a = 1, b = 1;
 	scanf("%d", &S);
