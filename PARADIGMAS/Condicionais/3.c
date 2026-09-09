@@ -1,8 +1,8 @@
-// GABRIEL FIALHO, D27724
+/*
+GABRIEL FIALHO, D27724
 
-// ATIVIDADES 2 E 3.
+ ATIVIDADES 2 E 3.
 
-int main() {
 	**2.**
 
 a) A = FALSO
@@ -33,5 +33,4 @@ p || (!q) = 1
 
 (!p) && (!q) = 0
 
-	return 0;
-}
+*/
