@@ -6,19 +6,23 @@ int main() {
 	int tam = 10;
 	int vet[tam], troca = 0;
 
-	for (int i = 0; i < tam; i++) {
+	for (int i = 0; i < sizeof(vet) / 4; i++) {
 		scanf("%d", &vet[i]);
 	}
-	for (int j = 0; j < tam; j++) {
-		for (int i = 0; i < tam - 1; i++) {
-			if (vet[j] > vet[i]) {
+	for (int j = 1; j <= sizeof(vet) / 4; j++) {
+		for (int i = 0; i < (sizeof(vet) / 4) - j; i++) {
+
+			if (vet[i] > vet[i + 1]) {
 				troca = vet[i];
 				vet[i] = vet[i + 1];
 				vet[i + 1] = troca;
+			} else if (vet[i] == vet[i + 1]) {
 			}
 		}
 	}
-	for (int i = 0; i < tam; i++) {
+	system("cls");
+	for (int i = 0; i < sizeof(vet) / 4; i++) {
+
 		printf("%d\n", vet[i]);
 	}
 
