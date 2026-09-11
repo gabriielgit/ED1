@@ -5,9 +5,9 @@
 int main() {
 	system("cls");
 	int x = 15, y = 15, z = 15;
-	int vet_1[x];
-	int vet_2[y];
-	int vet_3[z];
+	double vet_1[x];
+	double vet_2[y];
+	double vet_3[z];
 
 	srand(time(NULL));
 	for (int i = 0; i < x; i++) {
@@ -25,7 +25,7 @@ int main() {
 		}
 	}
 	for (int i = 0; i < z; i++) {
-		printf("vet 1: %2d   vet 2: %2d   vet 3: %2d\n", vet_1[i], vet_2[i], vet_3[i]);
+		printf("vet 1: %2.2lf   vet 2: %2.2lf   vet 3: %2.2lf\n", vet_1[i], vet_2[i], vet_3[i]);
 	}
 
 	return 0;
