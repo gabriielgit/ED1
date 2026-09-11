@@ -11,10 +11,12 @@ int main() {
 
 	srand(time(NULL));
 	for (int i = 0; i < x; i++) {
-		vet_1[i] = rand() % 10 + 1;
+		vet_1[i] = rand() % 1000 + 1;
+		vet_1[i] /= 10;
 	}
 	for (int i = 0; i < y; i++) {
-		vet_2[i] = rand() % 10 + 1;
+		vet_2[i] = rand() % 1000 + 1;
+		vet_2[i] /= 10;
 	}
 
 	for (int i = 0; i < z; i++) {
