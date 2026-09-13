@@ -23,7 +23,7 @@ int main() {
 		}
 	}
 	for (int i = 0; i < y; i++) {
-		vet_3[i + x + 1] = vet_2[i];
+		vet_3[i + x] = vet_2[i];
 	}
 
 	for (int i = 0; i < x; i++) {
@@ -33,10 +33,10 @@ int main() {
 	for (int i = 0; i < y; i++) {
 		printf("%d\n", vet_2[i]);
 	}
-	printf("%d\n");
+	/*printf("%d\n");
 	for (int i = 0; i < x + y; i++) {
 		printf("%d\n", vet_3[i]);
-	}
+	}*/
 
 	return 0;
 }
