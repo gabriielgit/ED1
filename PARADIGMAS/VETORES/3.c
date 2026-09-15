@@ -4,16 +4,14 @@
 
 int main() {
 	system("cls");
-	int x = 10, y = 10, z = 10;
+	int x = 10, z = 10;
 	int vet_1[x];
-	int vet_2[y];
+	int vet_2[x];
 	int vet_3[z];
 
 	srand(time(NULL));
 	for (int i = 0; i < x; i++) {
 		vet_1[i] = rand() % 201 - 100;
-	}
-	for (int i = 0; i < y; i++) {
 		vet_2[i] = rand() % 201 - 100;
 	}
 

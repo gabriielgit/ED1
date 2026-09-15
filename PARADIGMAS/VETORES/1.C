@@ -4,17 +4,15 @@
 
 int main() {
 	system("cls");
-	int x = 15, y = 15, z = 15;
+	int x = 15, z = 15;
 	double vet_1[x];
-	double vet_2[y];
+	double vet_2[x];
 	double vet_3[z];
 
 	srand(time(NULL));
 	for (int i = 0; i < x; i++) {
 		vet_1[i] = rand() % 1000 + 1;
 		vet_1[i] /= 10;
-	}
-	for (int i = 0; i < y; i++) {
 		vet_2[i] = rand() % 1000 + 1;
 		vet_2[i] /= 10;
 	}
