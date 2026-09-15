@@ -27,16 +27,16 @@ int main() {
 	}
 
 	for (int i = 0; i < x; i++) {
-		printf("%d\n", vet_1[i]);
+		printf("A1:   %d\n", vet_1[i]);
 	}
-	printf("%d\n");
+	printf("\n");
 	for (int i = 0; i < y; i++) {
-		printf("%d\n", vet_2[i]);
+		printf("B:   %d\n", vet_2[i]);
 	}
-	/*printf("%d\n");
+	printf("\n");
 	for (int i = 0; i < x + y; i++) {
-		printf("%d\n", vet_3[i]);
-	}*/
+		printf("C:   %d\n", vet_3[i]);
+	}
 
 	return 0;
 }
