@@ -23,7 +23,10 @@ int main() {
 		vet_3[i] = vet_2[k];
 		k++;
 	}
-
+	for (int i = 0; i < x; i++) {
+		printf("VET 1 :  %d     VET 2 :  %d\n", vet_1[i], vet_2[i]);
+	}
+	printf("\n");
 	for (int i = 0; i < x * 2; i++) {
 		printf("VET_3:   %d\n", vet_3[i]);
 	}
