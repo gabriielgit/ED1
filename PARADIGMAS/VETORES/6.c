@@ -15,11 +15,11 @@ int main() {
 		vet_2[i] = rand() % 10 + 1;
 	}
 
-	for (int i = 0; i < x * 2; i + 2) {
+	for (int i = 0; i < x * 2; i += 2) {
 		vet_3[i] = vet_1[j];
 		j++;
 	}
-	for (int i = 1; i <= x * 2; i + 2) {
+	for (int i = 1; i <= x * 2; i += 2) {
 		vet_3[i] = vet_2[k];
 		k++;
 	}
