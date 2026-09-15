@@ -18,9 +18,7 @@ int main() {
 	}
 
 	for (int i = 0; i < x; i++) {
-		if (i != x) {
-			vet_3[i] = vet_1[i];
-		}
+		vet_3[i] = vet_1[i];
 	}
 	for (int i = 0; i < y; i++) {
 		vet_3[i + x] = vet_2[i];
