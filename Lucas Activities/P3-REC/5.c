@@ -5,11 +5,11 @@
 #include <time.h>
 
 int MathMulti(int n, int i) {
-	if (n > 0) {
-		// printf("%d\n", i);
-		MathMulti(n - 1, i);
-		return i;
+
+	if (n > 1) {
+		return i + MathMulti(n - 1, i);
 	}
+	return i;
 }
 
 int main() {
