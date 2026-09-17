@@ -4,19 +4,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-double eNesimo(int n) {
+int Soma_Dresc(int n) {
 	if (n == 1) {
-		return 2;
+		return n + n;
 	}
 
-	if (n == 2) {
-		return 3;
+	if (n > 2) {
+		return n + Soma_Dresc(n - 1);
 	}
-
-	if (2 < n) {
-
-		return (5 * n) + pow(eNesimo(n - 1), n);
-	}
+	return 0;
 }
 
 int main() {
@@ -24,7 +20,7 @@ int main() {
 	int n, i = 1;
 	scanf("%d", &n);
 
-	printf("%.2lf", eNesimo(n));
+	printf("%d", Soma_Dresc(n));
 
 	return 0;
 }
