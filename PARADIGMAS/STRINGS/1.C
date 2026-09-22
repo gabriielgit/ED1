@@ -10,6 +10,7 @@ int main() {
 	fflush(stdin);
 	fgets(str1, 20, stdin);
 	fflush(stdin);
+	strcat(str, " ");
 	strcat(str, str1);
 	fputs(str, stdout);
 	return 0;
