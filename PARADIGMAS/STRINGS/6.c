@@ -9,7 +9,14 @@ int main() {
 	fgets(str, 15, stdin);
 	str[strcspn(str, "\n")] = '\0';
 	fflush(stdin);
-
+	for (int i = 0; i < strlen(str) != '\0'; i++) {
+		if (str[i] == 32) {
+			cont++;
+			printf("\n");
+		} else {
+			print("%s", str[i]);
+		}
+	}
 	fputs(str, stdout);
 	printf("\n%d", cont);
 	return 0;
