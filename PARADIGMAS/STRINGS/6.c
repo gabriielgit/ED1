@@ -14,7 +14,7 @@ int main() {
 			cont++;
 			printf("\n");
 		} else {
-			print("%s", str[i]);
+			printf("%c", str[i]);
 		}
 	}
 	fputs(str, stdout);
