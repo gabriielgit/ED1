@@ -21,34 +21,34 @@ int main() {
 			if (str[j] == str[i]) {
 				if (str[i] == 32) {
 					break;
-					verificador = true;
-				} else {
-					verificador = false;
-					break;
 				}
+				verificador = true;
+			} else {
+				verificador = false;
+				break;
 			}
-
-			if (verificador) {
-				for (int j = 0; j <= strlen(str); j++) {
-
-					if (str[j] == 32) {
-						break;
-					}
-					printf("%c", str[j]);
-				}
-				cont++;
-			}
-
-			/*if (str[j] != ' ') {
-
-				if (verificador) {
-					cont++;
-				}
-			}*/
-			aux += 2;
 		}
 
-		printf("\n%d", cont);
-		return 0;
+		if (verificador) {
+			for (int j = 0; j <= strlen(str); j++) {
+
+				if (str[j] == 32) {
+					break;
+				}
+				printf("%c", str[j]);
+			}
+			cont++;
+		}
+
+		/*if (str[j] != ' ') {
+
+			if (verificador) {
+				cont++;
+			}
+		}*/
+		aux += 2;
 	}
+
+	printf("\n%d", cont);
+	return 0;
 }
