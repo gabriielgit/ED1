@@ -11,7 +11,6 @@ int main() {
 	str[strcspn(str, "\n")] = '\0';
 	fflush(stdin);
 	for (int j = 0; j < strlen(str) - 1; j++) {
-		cont = 0;
 		for (int i = j + 1; i < strlen(str); i++) {
 			if (str[j] == str[i]) {
 				cont++;
