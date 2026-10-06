@@ -45,8 +45,10 @@ int main() {
 					cont++;
 				}
 			}*/
+			aux += 2;
 		}
 
 		printf("\n%d", cont);
 		return 0;
 	}
+}
