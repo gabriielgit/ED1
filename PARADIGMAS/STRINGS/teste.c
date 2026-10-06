@@ -30,14 +30,14 @@ int main() {
 		}
 
 		if (verificador) {
-			for (int j = 0; j <= strlen(str); j++) {
+			cont++;
+			for (int i = 0; i <= strlen(str); i++) {
 
 				if (str[j] == 32) {
 					break;
 				}
 				printf("%c", str[j]);
 			}
-			cont++;
 		}
 
 		/*if (str[j] != ' ') {
