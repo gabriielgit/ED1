@@ -14,7 +14,7 @@ int main() {
 	for (int j = 0; j < strlen(str); j++) {
 		repitiu = false;
 		for (int i = j + 1; i < strlen(str); i++) {
-			if (str[j] == str[i] && str[j]) {
+			if (str[j] == str[i]) {
 				repitiu = true;
 			}
 		}
