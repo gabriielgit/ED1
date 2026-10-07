@@ -12,11 +12,16 @@ int main() {
 
 	str[strcspn(str, "\n")] = '\0';
 	fflush(stdin);
+
+	// RODA TODA A FRASE
 	for (int j = 0; j < strlen(str); j++) {
 		verificador = false;
+		// VERIFICA TAMANHO DA PRIMEIRA PALAVRA
 		while (str[aux] != ' ' && str[aux] != '\0') {
 			aux++;
+			aux = j;
 		}
+		// COMPARARA PRIMEIRA PALAVRA COM O RESTANTE DA FRASE VERIFICANDO SE HÁ IGUALDADE
 		for (int i = aux + 2; i < strlen(str); i++) {
 			if (str[j] == str[i]) {
 				if (str[i] == 32) {
@@ -28,7 +33,7 @@ int main() {
 				break;
 			}
 		}
-
+		// SENDO IGUAL PRINTARA A FRASE QUE FOI USADA PARA COMPARAR
 		if (verificador) {
 			cont++;
 			for (int i = 0; i <= strlen(str); i++) {
