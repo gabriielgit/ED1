@@ -4,6 +4,7 @@
 
 int main() {
 	system("cls");
+	printf("teste");
 	char str[15], str1[20];
 	fgets(str, 15, stdin);
 	str[strcspn(str, "\n")] = '\0';
