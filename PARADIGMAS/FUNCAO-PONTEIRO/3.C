@@ -1,24 +1,21 @@
-#include <String.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-int Torre_Hanoi(int* haste_a, int* haste_b, int* haste_c, int x) {
-
-	if (x < 5) {
-
-		return Torre_Hanoi(
-			(*(haste_a + x) = *haste_c, haste_a),
-			(*(haste_b + x) = *haste_a, haste_b),
-			(*(haste_c + x) = *haste_b, haste_c),
-			x + 1);
-	} else {
-		return haste_c;
+void hanoi(int n, char origem, char destino, char auxiliar) {
+	if (n == 1) {
+		printf("Mover disco 1 da haste %c para a haste %c\n", origem, destino);
+		return;
 	}
+
+	hanoi(n - 1, origem, auxiliar, destino);
+	printf("Mover disco %d da haste %c para a haste %c\n", n, origem, destino);
+	hanoi(n - 1, auxiliar, destino, origem);
 }
 
 int main() {
-	int x = 0;
-	int haste_a[3] = { 1, 2, 3 }, haste_b[3], haste_c[3];
-	Torre_Hanoi(haste_a, haste_b, haste_c, x);
+	system("cls");
+
+	hanoi(3, 'a', 'c', 'b');
+
 	return 0;
 }
