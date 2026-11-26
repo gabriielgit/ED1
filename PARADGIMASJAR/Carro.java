@@ -4,7 +4,7 @@ public class Carro {
 
 	public String Placa;
 	public int AnoFabricacao;
-	public int AnoAtual;
+	public static int AnoAtual = 2026;
 	public int Imposto;
 
 	int CalcImposto(int AnoFabricacao, int AnoAtual) {
